@@ -38,4 +38,19 @@ document.addEventListener('DOMContentLoaded', function() {
             window.scrollTo(0, 0);
         }, 1);
     }
+
+    // Project card hover effect
+    const projectCards = document.querySelectorAll('.project-card');
+    projectCards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            setTimeout(() => {
+                this.querySelector('.project-description').style.opacity = '1';
+            }, 200);
+        });
+
+        card.addEventListener('mouseleave', function() {
+            this.querySelector('.project-description').style.opacity = '0';
+        });
+    });
 });
+
