@@ -1,66 +1,148 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="images/Logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IERI Architecture</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>IERI</title>
 </head>
 <body>
     <div class="container">
         <header class="header">
             <div class="logo">
-                <img src="building-icon.svg" alt="Building" class="icon">
-                <span class="logo-text">IERI</span>
+                <img src="images/building-icon.svg" alt="Building" class="icon">
+                <span class="logo-text" data-en="IERI" data-ka="იერი">IERI</span>
             </div>
-            <nav class="nav">
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </nav>
+            <div class="header-right">
+                <nav class="nav">
+                    <a href="#about" data-en="About" data-ka="შესახებ" class="hide-on-small">About</a>
+                    <a href="#projects" data-en="Projects" data-ka="პროექტები" class="hide-on-small">Projects</a>
+                    <a href="#contact" data-en="Contact" data-ka="კონტაქტი" class="contact-btn">Contact</a>
+                </nav>
+                <button id="language-switch" data-en="GE" data-ka="EN">GE</button>
+            </div>
         </header>
 
         <main>
             <section class="hero">
-                <h1>Innovative Architecture for the Future</h1>
-                <p>IERI creates spaces that inspire, innovate, and endure. Led by visionary architect Gocha Mindilaia.</p>
+                <h1 data-en="Innovative Architecture for the Future" data-ka="ინოვაციური არქიტექტურა მომავლისთვის">Innovative Architecture for the Future</h1>
+                <p id="typed-text" data-en="IERI creates spaces that inspire, innovate, and endure. Led by visionary architect Gocha Mindilaia." data-ka="IERI ქმნის სივრცეებს, რომლებიც შთააგონებენ, ინოვაციურია და გამძლეა. ხელმძღვანელობს ვიზიონერი არქიტექტორი გოჩა მინდილაია."></p>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn primary-btn">Our Projects</a>
-                    <a href="#contact" class="btn secondary-btn">Contact Us</a>
+                    <a href="#projects" class="btn primary-btn" data-en="Our Projects" data-ka="ჩვენი პროექტები">Our Projects</a>
+                    <a href="#contact" class="btn secondary-btn" data-en="Contact Us" data-ka="დაგვიკავშირდით">Contact Us</a>
                 </div>
             </section>
 
             <section id="about" class="about">
                 <div class="about-container">
-                    <img src="gocha-mindilaia.jpg" alt="Gocha Mindilaia" class="about-image">
+                    <img src="images/gocha_upgraded-transformed_upscaled.jpeg" alt="Gocha Mindilaia" class="about-image">
                     <div class="about-content">
-                        <h2>About IERI</h2>
-                        <p>IERI, led by renowned architect Gocha Mindilaia, is at the forefront of innovative architectural design. We blend form and function to create spaces that inspire and endure.</p>
+                        <h2 data-en="About IERI" data-ka="IERI-ს შესახებ">About IERI</h2>
+                        <p data-en="IERI, led by renowned architect Gocha Mindilaia, is at the forefront of innovative architectural design. We blend form and function to create spaces that inspire and endure." data-ka="IERI, რომელსაც ხელმძღვანელობს ცნობილი არქიტექტორი გოჩა მინდილაია, ინოვაციურია და გამძლეა. ხელმძღვანელობს ვიზიონერი არქიტექტორი გოჩა მინდილაია."></p>
+                        <p class="ieri-description">
+                            IERI (Institute for Ecological Research and Innovation) is a pioneering architectural firm at the forefront of sustainable and innovative design. Founded by visionary architect Gocha Mindilaia, IERI is dedicated to creating spaces that harmoniously blend with their environment while pushing the boundaries of modern architecture.
+                        </p>
+                        <p class="ieri-description">
+                            Our team of skilled architects, engineers, and designers brings a wealth of experience and a passion for eco-friendly solutions to every project. At IERI, we believe that great architecture should not only be aesthetically pleasing but also environmentally responsible and socially impactful.
+                        </p>
+                        <p class="ieri-description">
+                            From residential homes that embrace natural surroundings to cutting-edge commercial spaces that prioritize energy efficiency, IERI's portfolio showcases a diverse range of projects. Each design is a testament to our commitment to innovation, sustainability, and the creation of spaces that inspire and endure.
+                        </p>
+                        <p class="ieri-description">
+                            At the heart of IERI's philosophy is the belief that architecture has the power to shape a better future. We continuously explore new technologies, materials, and design methodologies to create buildings that are not only beautiful but also contribute positively to the environment and the communities they serve.
+                        </p>
                         <div class="about-buttons">
-                            <a href="#philosophy" class="btn primary-btn">Our Philosophy</a>
-                            <a href="#team" class="btn secondary-btn">Meet the Team</a>
+                            <a href="#philosophy" class="btn primary-btn" data-en="Our Philosophy" data-ka="ჩვენი ფილოსოფია">Our Philosophy</a>
+                            <a href="team.html" class="btn secondary-btn" data-en="Meet the Team" data-ka="გაიცანით გუნდი">Meet the Team</a>
                         </div>
                     </div>
                 </div>
             </section>
 
             <section id="projects" class="projects">
-                <h2>Our Projects</h2>
+                <h2 data-en="Our Projects" data-ka="ჩვენი პროექტები">Our Projects</h2>
                 <div class="project-list">
                     <div class="project-card">
-                        <img src="project1.jpg" alt="Project 1">
-                        <h3>Project 1</h3>
-                        <p>A brief description of the project, highlighting its unique features and architectural significance.</p>
+                        <div class="project-image">
+                            <img src="images/project1.jpg" alt="Project 10">
+                        </div>
+                        <div class="project-info">
+                            <h3 data-en="Sustainable Smart City Development" data-ka="მდგრადი ჭკვიანი ქალაქის განვითარება">Sustainable Smart City Development</h3>
+                            <p class="project-description" data-en="A forward-thinking urban planning project incorporating renewable energy, smart technology, and green spaces to create a livable, efficient city of the future." data-ka="პროგრესული ურბანული დაგეგმარების პროექტი, რომეიც აერთიანებს გაახლებად ენერგიას, ჭკვიან ტექნოლოგიებს და მწვანე სივრცეებს, რათა შექმნას საცხოვრებლად ვარგისი, ეფექტური მომავლის ქალაქი.">A forward-thinking urban planning project incorporating renewable energy, smart technology, and green spaces to create a livable, efficient city of the future.</p>
+                        </div>
                     </div>
                     <div class="project-card">
-                        <img src="project2.jpg" alt="Project 2">
-                        <h3>Project 2</h3>
-                        <p>A brief description of the project, highlighting its unique features and architectural significance.</p>
+                        <div class="project-image">
+                            <img src="images/project2.jpg" alt="Project 2">
+                        </div>
+                        <div class="project-info">
+                            <h3 data-en="Eco-Friendly Office Complex" data-ka="ეკო-მეგობრული საოფისე კომპლექსი">Eco-Friendly Office Complex</h3>
+                            <p class="project-description" data-en="A sustainable office building with green roofs, solar panels, and energy-efficient design, surrounded by carefully landscaped grounds." data-ka="მდგრადი საოფისე შენობა მწვა სახურავებით, მზის პანელებით და ენერგოეფექტული დიზაინით, გარშემორტყმული გულდასმით დაგეგმარებული ტერიტორიით.">A sustainable office building with green roofs, solar panels, and energy-efficient design, surrounded by carefully landscaped grounds.</p>
+                        </div>
                     </div>
                     <div class="project-card">
-                        <img src="project3.jpg" alt="Project 3">
-                        <h3>Project 3</h3>
-                        <p>A brief description of the project, highlighting its unique features and architectural significance.</p>
+                        <div class="project-image">
+                            <img src="images/project3.jpg" alt="Project 3">
+                        </div>
+                        <div class="project-info">
+                            <h3 data-en="Charming Multi-Unit Residential Building" data-ka="მოქალაქური მრული საცხოვრებელი სკალა">Charming Multi-Unit Residential Building</h3>
+                            <p class="project-description" data-en="A multi-unit residential building with a bold entrance design, blending modern architecture with scenic mountain views." data-ka="მოქალაქური მრული საცხოვრებელი სკალა სუფთა ხაზებით, დახრილი სახურავით და ფართო აივნით, მწვანე ლანდშაფტში.">A multi-unit residential building with a bold entrance design, blending modern architecture with scenic mountain views.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/project4.jpg" alt="Project 4">
+                        </div>
+                        <div class="project-info">
+                            <h3 data-en="Sustainable Urban Office Complex" data-ka="მდგრადი ურბანულ საოფისე კომპლექსი">Sustainable Urban Office Complex</h3>
+                            <p class="project-description" data-en="An eco-friendly office building featuring green terraces, solar panels, and a striking geometric facade that maximizes natural light." data-ka="ეკო-მეგობრული საოფისე შენობა მწვანე ტერასებით, მზის პანელებით და შთამბეჭდავი გეომეტრიული ფასადით, რომელიც მაქსიმალურად იყენებს ბუნებრივ განათებას.">An eco-friendly office building featuring green terraces, solar panels, and a striking geometric facade that maximizes natural light.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/project5.jpg" alt="Project 5">
+                        </div>
+                        <div class="project-info">
+                            <h3 data-en="Eco-Friendly Corporate Campus" data-ka="ეკო-მეგობრული კორპორატიული კამპუსი">Eco-Friendly Corporate Campus</h3>
+                            <p class="project-description" data-en="A state-of-the-art corporate headquarters designed with sustainability in mind, featuring green roofs, solar panels, and natural light optimization." data-ka="თანამედროვე კორპორატიული შტაბ-ბინა, შექმნილი მდგრადობის გათვალისწინებით, მწვანე სახურავებით, მზის პანელებით და ბუნებრივი განათების ოპტიმიზაციით.">A state-of-the-art corporate headquarters designed with sustainability in mind, featuring green roofs, solar panels, and natural light optimization.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/project6.jpg" alt="Project 6">
+                        </div>
+                        <div class="project-info">
+                            <h3 data-en="Urban Mixed-Use Development" data-ka="ურბანული შერეული გამოყენების განვითარება">Urban Mixed-Use Development</h3>
+                            <p class="project-description" data-en="A vibrant city center project combining residential, commercial, and cultural spaces to create a dynamic, walkable neighborhood." data-ka="ქალაქის ცენტრის ცოცხალი პროექტი, რომელიც აერთიანებს საცხოვრებელ, კომერციულ და კულტურულ სივრცეებს დინამიური, ფეხით სავალი უბნის შესაქმნელად.">A vibrant city center project combining residential, commercial, and cultural spaces to create a dynamic, walkable neighborhood.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/project7.jpg" alt="Project 7">
+                        </div>
+                        <div class="project-info">
+                            <h3 data-en="Adaptive Reuse: Industrial to Residential" data-ka="ადაპტური გამოყენება: ინდუსტრიულიდან საცხოვრებლამდე">Adaptive Reuse: Industrial to Residential</h3>
+                            <p class="project-description" data-en="Transformation of a former factory into modern loft apartments, preserving industrial character while creating comfortable living spaces." data-ka="ყოფილი ქარხნის გარდაქმნა თანამედროვე ლოფტ-აპარტამენტებად, ინდუსტრიული ხასიათის შენარჩუნებით და კომფორტული საცხოვრებელი სივრცეების შექმნით.">Transformation of a former factory into modern loft apartments, preserving industrial character while creating comfortable living spaces.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/project8.jpg" alt="Project 8">
+                        </div>
+                        <div class="project-info">
+                            <h3 data-en="Sustainable Community Center" data-ka="მდგრადი საზოგადოებრივი ცენტრი">Sustainable Community Center</h3>
+                            <p class="project-description" data-en="A multi-functional community hub built with locally-sourced materials, incorporating renewable energy systems and flexible spaces for various community activities." data-ka="მრავალფუნქციური საზოგადოებრივი ცენტრი, აშენებული ადგილობრივი მასალებით, განახლებადი ენერგიის სისტემებით და მოქნილი სივრცეებით სხვადასხვა საზოგადოებრივი აქტივობებისთვის.">A multi-functional community hub built with locally-sourced materials, incorporating renewable energy systems and flexible spaces for various community activities.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/project9.jpg" alt="Project 9">
+                        </div>
+                        <div class="project-info">
+                            <h3 data-en="Floating Eco-Resort" data-ka="ეკო-კურორტი">Floating Eco-Resort</h3>
+                            <p class="project-description" data-en="An innovative floating resort that combines luxury with sustainability, featuring over-water bungalows, renewable energy systems, and marine conservation initiatives." data-ka="ინოვაციური მცურავი კურორტი, რომელიც აერთიანებს ფუფუნებას მდგრადობასთან, წყალზე განთავსებული ბუნგალოებით, განახლებადი ენერგიის სისტემებით და ზღვის კონსერვაციის ინიციატივებით.">An innovative floating resort that combines luxury with sustainability, featuring over-water bungalows, renewable energy systems, and marine conservation initiatives.</p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -76,10 +158,10 @@
                     </div>
                 </div>
                 <form class="contact-form">
-                    <input type="text" placeholder="First name" required>
-                    <input type="text" placeholder="Last name" required>
-                    <input type="email" placeholder="Email" required>
-                    <textarea placeholder="Message" required></textarea>
+                    <input type="text" placeholder="First name" data-en-placeholder="First name" data-ka-placeholder="სახელი" required>
+                    <input type="text" placeholder="Last name" data-en-placeholder="Last name" data-ka-placeholder="ვარი" required>
+                    <input type="email" placeholder="Email" data-en-placeholder="Email" data-ka-placeholder="ელ.ფოსტა" required>
+                    <textarea placeholder="Message" data-en-placeholder="Message" data-ka-placeholder="შეტყობინება" required></textarea>
                     <button type="submit" class="btn primary-btn">Send Message</button>
                 </form>
             </section>
@@ -93,5 +175,6 @@
             </nav>
         </footer>
     </div>
+    <script src="js/main.js"></script>
 </body>
 </html>
