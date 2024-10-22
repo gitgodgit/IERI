@@ -39,18 +39,38 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 1);
     }
 
-    // Project card hover effect
-    const projectCards = document.querySelectorAll('.project-card');
-    projectCards.forEach(card => {
-        card.addEventListener('mouseenter', function() {
-            setTimeout(() => {
-                this.querySelector('.project-description').style.opacity = '1';
-            }, 200);
-        });
+    // Project card hover effect has been removed as it's now handled by CSS
 
-        card.addEventListener('mouseleave', function() {
-            this.querySelector('.project-description').style.opacity = '0';
-        });
+    // Header transparency on scroll
+    const header = document.querySelector('.header');
+    const scrollThreshold = 100; // Adjust this value to change when the header becomes transparent
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > scrollThreshold) {
+            header.classList.add('header-transparent');
+        } else {
+            header.classList.remove('header-transparent');
+        }
     });
-});
 
+    // Language switching
+    const languageSwitch = document.getElementById('language-switch');
+    let currentLanguage = 'en';
+
+    languageSwitch.addEventListener('click', () => {
+        currentLanguage = currentLanguage === 'en' ? 'ka' : 'en';
+        updateLanguage();
+    });
+
+    function updateLanguage() {
+        document.querySelectorAll('[data-en]').forEach(element => {
+            element.textContent = element.getAttribute(`data-${currentLanguage}`);
+        });
+        
+        document.querySelectorAll('[data-en-placeholder]').forEach(element => {
+            element.placeholder = element.getAttribute(`data-${currentLanguage}-placeholder`);
+        });
+
+        languageSwitch.textContent = currentLanguage === 'en' ? 'GE' : 'EN';
+    }
+});
