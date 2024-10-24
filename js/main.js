@@ -1,20 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Typewriter effect
-    const text = "IERI creates spaces that inspire, innovate, and endure. Led by visionary architect Gocha Mindilaia.";
-    const typedTextElement = document.getElementById('typed-text');
-    let i = 0;
-
-    function typeWriter() {
-        if (i < text.length) {
-            typedTextElement.innerHTML += text.charAt(i);
-            i++;
-            setTimeout(typeWriter, 50); // Adjust typing speed here (milliseconds)
-        }
-    }
-
-    // Start the typewriter effect
-    typeWriter();
-
     // Smooth scrolling
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -39,8 +23,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 1);
     }
 
-    // Project card hover effect has been removed as it's now handled by CSS
-
     // Header transparency on scroll
     const header = document.querySelector('.header');
     const scrollThreshold = 100; // Adjust this value to change when the header becomes transparent
@@ -55,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Language switching
     const languageSwitch = document.getElementById('language-switch');
-    let currentLanguage = 'en';
+    let currentLanguage = 'ka'; // Default to Georgian
 
     languageSwitch.addEventListener('click', () => {
         currentLanguage = currentLanguage === 'en' ? 'ka' : 'en';
@@ -73,4 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         languageSwitch.textContent = currentLanguage === 'en' ? 'GE' : 'EN';
     }
+
+    // Set initial language
+    updateLanguage();
 });
